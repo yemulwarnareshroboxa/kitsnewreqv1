@@ -1,0 +1,57 @@
+
+/* Add this CSS to your stylesheet */
+.sort-icons i {
+    font-size: 15px; /* Adjust this value for icon size */
+    opacity: 0.5; /* Adjust this value to control icon opacity */
+    transition: opacity 0.3s;
+}
+
+.sort-icons i.active {
+    opacity: 2;
+    color: blue;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+th{
+    height: 10px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .menu.open {
+    display: block;
+    /* Add your styles to show the open menu here */
+  }
+  

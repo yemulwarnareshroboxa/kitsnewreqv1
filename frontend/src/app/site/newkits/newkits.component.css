@@ -1,0 +1,15 @@
+/* Style the calendar icon */
+.calendar-icon {
+    cursor: pointer;
+  }
+  
+  /* Style the calendar icon when clicked */
+  .calendar-icon.clicked {
+    background-color: lightgray;
+  }
+  
+  /* Hide the input type="date" when the calendar is open */
+  input[type="date"][hidden] {
+    display: none;
+  }
+  

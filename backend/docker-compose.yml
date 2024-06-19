@@ -1,0 +1,45 @@
+version: '3.9'
+
+services:
+  dev-kits-api:
+    container_name: dev-kits-api
+    profiles:
+      - kits-be
+    build: .
+    image: dev-kits-api
+    ports:
+    - "5001:5001"
+    env_file:
+      - .env
+    volumes:
+      - ./:/home/app
+ 
+  testing-kits-api:
+    container_name: testing-kits-api
+    profiles:
+      - kits-testing
+    build: .
+    image: testing-kits-api
+    ports:
+    - "5002:5001"
+    env_file:
+      - .env
+    volumes:
+      - ./:/home/app
+
+  db:
+    container_name: kits-db
+    profiles:
+      - db
+    image: postgres:15.1
+    restart: unless-stopped
+    ports:
+    - "5432:5432"
+    environment:
+       POSTGRES_PASSWORD: Ners!23
+    volumes:
+      - /postgres-data:/var/lib/postgresql/data
+        #networks:
+        # default:
+        #name: nginxproxymanager
+        #external: true

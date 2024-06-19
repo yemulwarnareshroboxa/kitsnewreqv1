@@ -1,0 +1,70 @@
+.main-contentt {
+  margin-left: 186px !important;
+  overflow: hidden !important;
+  margin-top: -4% !important;
+
+  font-family: Mada, sans-serif !important;
+  font-weight: 400;
+font-size: 15px;
+overflow-y: scroll !important;
+  
+}
+
+.sort-icons i {
+    font-size: 15px; /* Adjust this value for icon size */
+    opacity: 0.5; /* Adjust this value to control icon opacity */
+    transition: opacity 0.3s;
+}
+
+.sort-icons i.active {
+    opacity: 2;
+    color: blue;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+th{
+    height: 30px;
+    padding: 5px;
+}
+td{
+  height: 10px;
+  padding: 5px;
+}
+
+.card-allignment {
+  height: 110px;
+  width: 250px;
+}
+.card-border {
+  border-top: 3px solid rgba(0, 115, 170, .5);
+}
+
+.labcreationlIcon {
+  margin-left: 0px !important;
+}
+
+.materialIcon {
+  margin-left: 22px !important;
+}
+
+h5 {
+  font-family: Mada, sans-serif;
+font-weight: 400;
+font-size: 14px;
+}
+
+.round-lg {
+  line-height: 65px;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-danger-rgb), var(--bs-bg-opacity)) !important;
+
+  --bs-text-opacity: 1;
+    color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
+}

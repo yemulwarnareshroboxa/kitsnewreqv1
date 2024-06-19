@@ -1,0 +1,11 @@
+Adjust the size of the calendar dropdown
+.ui-datepicker.ui-widget {
+    font-size: 12px; /* Adjust the font size as needed */
+    width: 200px; /* Adjust the width as needed */
+  }
+  
+  /* Adjust the size of the days in the calendar */
+  /* .ui-datepicker-calendar tbody td {
+    padding: 5px;
+  } */
+  

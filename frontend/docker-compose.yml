@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  dev-kits-ui:
+    container_name: kits-ui
+    profiles:
+      - kits-ui
+    build: .
+    image: kits-ui
+    ports:
+    - "4200:4200"
+

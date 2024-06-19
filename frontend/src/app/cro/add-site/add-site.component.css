@@ -1,0 +1,93 @@
+
+.btn-primary {
+    background-color: #0073aa;
+border-color: #0073aa;
+color: #fff;
+}
+
+
+.btn-secondary {
+    background-color: #cccccc;;
+    border-color: #cccccc;;
+    color: #fff;
+  }
+
+
+
+
+  .table-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .table-header, .table-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 10px 0;
+  }
+  
+  .table-header {
+    background: #EEE;
+    font-weight: bold;
+  }
+  
+  .table-row:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .table-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .table-body .table-row {
+    border-bottom: 1px solid #ddd;
+  }
+  
+
+  .grid-table {
+  display: grid;
+  gap: 10px;
+}
+
+.grid-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #EEE;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.grid-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-row {
+  display: contents;
+}
+
+.grid-row > div {
+  background: #f9f9f9;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.grid-row:nth-child(3n+1) > div,
+.grid-row:nth-child(3n+2) > div,
+.grid-row:nth-child(3n+3) > div {
+  border-bottom: none;
+}
+
+.btn-danger {
+  background-color: #ff414b;
+}
+
+.country-dropdown option{
+  width: 100px !important;
+}
+
+

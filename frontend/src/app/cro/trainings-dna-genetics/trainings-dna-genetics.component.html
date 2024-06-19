@@ -1,0 +1,55 @@
+<div *ngIf="showIntroduction && !isAccessmentStart" class="bg-white" style="margin-left: 30px;" >
+    <!-- Progress Bar -->
+    <div class="progress mb-3" style="margin-top: -58px; height: 15px;">
+      <div
+        class="progress-bar"
+        role="progressbar"
+        [style.width.%]="progress"
+        [attr.aria-valuenow]="progress"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        {{ progress }}%
+      </div>
+    </div>
+ 
+    <!-- Introduction Content -->
+    <div *ngIf="data.introductions.length > 0" style="padding-left: 20px; overflow-y: scroll; max-height: 340px;">
+      <div *ngFor="let intro of data.introductions; let i = index">
+        <div *ngIf="intro.page === currentPage">
+          <h3 style="font-size: 18px; font-weight: bold;">{{i+1}}. {{ intro.title }}</h3>
+          <ul style="list-style-type: none;">
+            <li *ngFor="let content of intro.content">
+            <span [innerHTML]="content"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- Navigation Buttons -->
+      <button *ngIf="currentPage != 1"  (click)="previousPage()" [disabled]="currentPage === 1" class="btn btn-secondary">Previous</button>
+      <button  *ngIf="currentPage != totalPages" (click)="nextPage()" [disabled]="currentPage === totalPages" class="btn btn-primary">Next</button>
+     
+      <!-- Exam Start Button -->
+      <div *ngIf="currentPage === totalPages">
+        <button class="btn btn-success" (click)="startAccessment()">Start the Assessment</button>
+      </div>
+    </div>
+    <div *ngIf="data.introductions.length === 0">
+      <p>Loading...</p>
+    </div>
+  </div>
+ 
+  <div class="container bg-white " style="margin-top: -58px !important;  margin-left: 29px; padding-right: 4%; font-size: 16px;" *ngIf="isAccessmentStart">
+    <!-- Timer code start -->
+    <div class="timer">
+      Time Left: {{ formattedTime }}
+    </div>
+    <div *ngIf="showWarning" class="alert alert-danger">
+      Warning: Only 5 minutes left!
+    </div>
+     <!-- Timer code End -->
+     <div style="padding-top: 30px; padding-left: 20px;">
+    <app-quiz [questions]="questions"></app-quiz>
+    </div>
+  </div>

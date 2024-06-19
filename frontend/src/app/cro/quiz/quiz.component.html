@@ -1,0 +1,50 @@
+<span>Question {{currentQuestionId + 1}}/{{questions.length}}</span>
+
+<app-quiz-item 
+  [question]="questions[currentQuestionId]"
+  (answer)="onAnswer(currentQuestionId, $event)"
+  [checkedIndex]="answers[currentQuestionId]">
+  
+</app-quiz-item>
+
+<hr>
+<!-- <button (click)="prev()" [disabled]="currentQuestionId === 0">Prev</button> -->
+<button type="button" *ngIf="currentQuestionId != 0" (click)="prev()" [disabled]="currentQuestionId === 0" class="btn btn-secondary btn-round  waves-effect btn-label waves-light">
+ Previous
+</button>
+
+<button *ngIf="currentQuestionId != questions.length - 1"  class="btn btn-primary btn-round waves-effect btn-label waves-light" (click)="next()" [disabled]="currentQuestionId === questions.length - 1">Next</button>
+<hr>
+
+<button *ngIf="isAnsweredAll()" class="btn btn-primary btn-round waves-effect btn-label waves-light" (click)="verify()" [disabled]="!isAnsweredAll()">Submit Assessment</button>
+
+<!-- <div  *ngFor="let data of assessment; let i = index" >
+  <br/>
+  <span> <b>Question : {{data.Question}}</b></span><br/>
+  <span><b>Correct Answer : </b>{{data.CorrectAnswer}}</span><br/>
+  <span [ngClass]="data.CorrectAnswer== data.yourAns ? 'coorectAns':'worngAns'"><b>Your Answer : </b>{{data.yourAns}}</span><br/>
+</div> -->
+
+
+<p-dialog header = "Assessment Result"   (onHide)="accessmentStatus()" [(visible)]="accessmentDialog"  [class.overlay]="accessmentDialog" [style]="{ width: '65vw', height: '50vw' }" [baseZIndex]="10000">
+ 
+  <p style="text-align: center;">
+    <span *ngIf="isQuizPass"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;&nbsp; </span>
+    <span *ngIf="!isQuizPass"> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;</span>
+    <span class='congStyle' [innerHTML]="accessMentText"></span>
+  </p>
+  <div  *ngFor="let data of assessment; let i = index" >
+    <br/>
+    <span> <b>Question : {{data.Question}}</b></span><br/>
+    <span><b>Correct Answer : </b>{{data.CorrectAnswer}}</span><br/>
+    <span [ngClass]="data.CorrectAnswer== data.yourAns ? 'coorectAns':'worngAns'"><b>Your Answer : </b>{{data.yourAns}}</span><br/>
+  </div> <br>
+ <ng-template pTemplate="footer">
+      <p-button icon="pi pi-check" label="Okay" styleClass="p-button-text "(click)='accessmentStatus()'></p-button>
+      <!-- <p-button icon="pi pi-times"  label="Cancel"></p-button> -->
+  </ng-template>
+</p-dialog>
+
+
+
+<!-- *ngFor="let question of questions; let i = index"  -->

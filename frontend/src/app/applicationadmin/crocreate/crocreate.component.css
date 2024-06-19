@@ -1,0 +1,25 @@
+.btn-secondary {
+    background-color: #cccccc;;
+    border-color: #cccccc;;
+    color: #fff;
+  }
+
+  .country-dropdown {
+    width: 10px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    padding: 5px; /* Adjust padding for better appearance */
+    font-size: 14px; /* Adjust font size as needed */
+    border: 1px solid #ccc; /* Customize border */
+    border-radius: 4px; /* Optional: rounded corners */
+    box-shadow: none; /* Remove default browser shadow */
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    -moz-appearance: none; /* Remove default styling in Firefox */
+    appearance: none; /* Remove default styling in modern browsers */
+  }
+  
+  .country-dropdown:focus {
+    border-color: #66afe9; /* Optional: change border color on focus */
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6); /* Optional: add custom focus shadow */
+  }
+  

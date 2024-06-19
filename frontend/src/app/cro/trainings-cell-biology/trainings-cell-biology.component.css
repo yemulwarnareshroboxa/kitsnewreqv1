@@ -1,0 +1,77 @@
+.font-allignment {
+  font-family: Mada, sans-serif;
+font-weight: 400;
+font-size: 15px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  /* padding: 20px; */
+  text-align: center;
+}
+/*  
+button {
+  margin: 10px;
+} */
+
+button {
+  margin: 10px;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+ 
+/* .disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+} */
+ 
+.progress-bar {
+  background:rgb(124, 191, 124);
+ 
+}
+ 
+.btn-primary {
+  background-color: #0073aa;
+border-color: #0073aa;
+color: #fff;
+cursor: pointer;
+}
+ 
+/* .btn-secondary {
+  background-color: #cccccc;;
+  border-color: #cccccc;;
+  color: #fff;
+  cursor: pointer;
+} */
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+  cursor: pointer;
+}
+ 
+.timer {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+ 
+.alert-danger {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.timer {
+  float: right;
+  font-size: 18px;
+    padding-top: 3px;
+}
+
+.scrollable-container {
+  overflow-y: auto;
+  /* max-height: calc(100vh - 58px); */
+}
+
+
+ 

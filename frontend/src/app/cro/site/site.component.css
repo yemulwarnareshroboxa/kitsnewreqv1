@@ -1,0 +1,66 @@
+::ng-deep .overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
+	z-index: 9999;
+	backdrop-filter: blur(4px);
+	overflow: hidden;
+	position: fixed;
+  }
+
+  /* ::ng-deep .p-dialog {
+	width: 40%;
+	height: 80%
+}  */
+
+::ng-deep .AssociatedStudy-Cards {
+        /* height: 50% !important; */
+        width: 40% !important;
+    }
+
+::ng-deep .ScreeningNumber-chartAllignment {
+    height: 150px !important;
+    width: 150px !important;
+}    
+
+ ::ng-deep header {
+        font-size: 16px !important;
+    }
+
+    .p-dialog .p-dialog-header .p-dialog-title {
+        font-size: 16px !important;
+    }
+
+/* Add this CSS to your stylesheet */
+.sort-icons i {
+    font-size: 15px; /* Adjust this value for icon size */
+    opacity: 0.5; /* Adjust this value to control icon opacity */
+    transition: opacity 0.3s;
+}
+
+.sort-icons i.active {
+    opacity: 2;
+    color: blue;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+th{
+    height: 10px;
+    padding: 5px;
+}
+
+.btn-primary {
+    background-color: #0073aa;
+border-color: #0073aa;
+color: #fff;
+}
+
+.table-container {
+    overflow-x: auto;
+}

@@ -1,0 +1,11 @@
+<br/><span style="font-size: 15px !important;font-weight: 600;font-family: Mada, sans-serif;">{{question?.title}}</span>
+
+<label *ngFor="let option of question?.options; let i = index">
+  <input 
+    type="radio" 
+    [name]="question?.title"
+    (change)="onChange(i)"
+    [checked]="i === checkedIndex">
+
+      {{option}}
+</label>

@@ -1,0 +1,253 @@
+.r-red {
+	background: #ff414b !important;
+}
+
+.r-red-text {
+	color: #ff414b !important;
+}
+
+.r-blue-text {
+	color: #03aced !important;
+}
+
+
+.hidden-column {
+	display: none;
+  }
+
+.r-darkblue {
+	background: #064ea2 !important;
+	border: #064ea2 !important;
+}
+
+.r-darkblue-border {
+	border: #064ea2 !important;
+}
+
+.r-blue {
+	background: #03aced !important;
+	border: #03aced !important;
+}
+
+.r-blue-border {
+	border: #03aced !important;
+}
+
+
+.r-red-border {
+	border: #ff414b !important;
+}
+
+.r-dark-text {
+	color: #000 !important;
+}
+
+.pull-right {
+	float: right;
+}
+
+
+::ng-deep .p-picklist .p-picklist-list {
+	height: 250px;
+	width: 300px
+}
+
+::ng-deep .p-dialog {
+	width: 50%;
+	height: 80%
+}
+
+::ng-deep .p-multiselect {
+	width: 80%;
+
+}
+
+::ng-deep.p-multiselect .p-multiselect-label {
+    padding: 0.3rem 0.3rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    margin-bottom: 1% !important;
+}
+
+
+.custom-multiselect .p-multiselect-items .p-multiselect-item,
+.custom-multiselect .p-ripple-element {
+  height: 30px; /* Adjust the height value as needed */
+  line-height: 30px; /* Adjust the line-height value as needed */
+}
+
+  ::ng-deep .custom-multiselect .p-multiselect-label-container {
+	height: 35px; /* Adjust the height value as needed */
+  }
+  ::ng-deep .p-multiselect-panel .p-multiselect-header .p-multiselect-filter-container .p-inputtext {
+    padding-right: 1.75rem;
+    height: 15px;
+}
+::ng-deep .p-multiselect .p-multiselect-label {
+    padding: 0.3rem 0.3rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    margin-bottom: 48%;
+}
+::ng-deep .p-multiselect-panel .p-multiselect-items {
+    padding: -45.25rem 0;
+}
+::ng-deep .p-dialog .p-dialog-header .p-dialog-title {
+    font-weight: 600;
+    font-size: 1rem !important;
+	font-size: 16px !important;
+    margin-left: 25%;
+    text-align: center;
+}
+
+
+  ::ng-deep .p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight {
+    color: #1D4ED8;
+    background: #EFF6FF;
+    line-height: -30;
+}
+
+  ::ng-deep .overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
+	z-index: 9999;
+	backdrop-filter: blur(4px);
+	overflow: hidden;
+	position: fixed;
+  }
+  
+::ng-deep .p-multiselect .p-multiselect-items .p-multiselect-item-label {
+	line-height: 20px;
+	/* Adjust the line-height as needed */
+}
+
+::ng-deep .pi-multiselect-panel .ui-multiselect-item {
+	height: 20px; /* Adjust the height as needed */
+	line-height: 100%; /* Adjust the line-height as needed */
+  }
+
+.r-dark {
+	background: #000 !important;
+}
+
+.r-lite {
+	color: #CCC;
+}
+
+.login-bg {
+	/* background-image: url("../images/login_bg.jpg"); */
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body[data-sidebar=dark] .mm-active {
+	color: #ff414b !important;
+}
+
+.vertical-menu {
+	background: #20456a !important;
+}
+
+.navbar-brand-box {
+	background: #20456a !important;
+}
+
+.show-btn {
+	background: #ff414b;
+	border: #111 solid 1px;
+	border: #f1c40f solid 1px;
+}
+
+.show-btn:hover {
+	background: #FFF;
+	border: #ff414b solid 1px;
+	color: #ff414b;
+}
+
+.dark-btn {
+	background: #111;
+	border: #111 solid 1px;
+}
+
+.dark-btn:hover {
+	background: #FFF;
+	border: #ff414b solid 1px;
+	color: #ff414b;
+}
+
+.edit-btn {
+	background: #111;
+	border: #111 solid 1px;
+	color: #FFF;
+}
+
+.edit-btn:hover {
+	background: #FFF;
+	border: #ff414b solid 1px;
+	color: #ff414b;
+}
+
+.delete-btn {
+	background: #FFF;
+	border: #111 solid 1px;
+	color: #111;
+}
+
+.delete-btn:hover {
+	background: #111;
+	border: #111 solid 1px;
+	color: #FFF;
+}
+
+hr {
+	margin: 7px 0;
+	border-top: 1px solid #EEE;
+}
+
+.wizard .steps .current a,
+.wizard .steps .current a:active,
+.wizard .steps .current a:hover {
+	background-color: rgba(255, 65, 75, .2);
+	color: var(--bs-gray-700);
+}
+
+.wizard .steps>ul>li a {
+	display: block;
+	padding: 0.5rem 1rem;
+	color: var(--bs-gray-600);
+	font-weight: 500;
+	background-color: rgba(237, 237, 237, .5);
+}
+
+.wizard {
+	min-height: 350px;
+}
+
+.menu-title {
+	color: #fff !important;
+}
+
+
+#sidebar-menu ul li a {
+	color: #fff !important;
+}
+
+#sidebar-menu ul li a i {
+	color: #fff !important;
+}
+
+
+.nav-tabs .nav-link {
+	border-radius: 0px;
+}
+
+.nav-tabs {
+	font-size: 14px;
+}
+
+.nav-tabs .nav-link.active {
+	background: #20456a;
+	color: #FFF;
+}

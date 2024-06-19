@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family= Mada, sans-serif:wght@400;700&display=swap');
+
+body {
+font-family:  Mada, sans-serif;
+	/* color: #f1c40f; */
+  }
+
+  /* font-family: Mada, sans-serif; */
+
+  ::ng-deep .form-select option {
+    width: 50px; /* Adjust this value as needed */
+  }
+
+.r-red {
+  background: #ff414b !important;
+}
+
+.r-red-text {
+  color: #ff414b !important;
+}
+.custom-invalid {
+  /* border: none; */
+  /* border: #fff !important; */
+  border: 1px solid #ff414b; 
+  width: 18% !important;
+  /* Example: Add your desired styling for invalid state */
+  /* Add any other styles you want for the invalid state */
+}
+
+.r-blue-text {
+  color: #03aced !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.r-darkblue {
+  background: #064ea2 !important;
+  border: #064ea2 !important;
+}
+
+.r-darkblue-border {
+  border: #064ea2 !important;
+}
+
+.r-blue {
+  background: #03aced !important;
+  border: #03aced !important;
+}
+
+.r-blue-border {
+  border: #03aced !important;
+}
+
+.r-red-border {
+  border: #ff414b !important;
+}
+
+.r-dark-text {
+  color: #000 !important;
+}
+
+.pull-right {
+  float: right;
+}
+
+.r-dark {
+  background: #000 !important;
+}
+
+.r-lite {
+  color: #ccc;
+}
+
+.login-bg {
+  background-image: url("../images/login_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  max-height: 100%;
+}
+
+body[data-sidebar="dark"] .mm-active {
+  color: #ff414b !important;
+}
+
+.vertical-menu {
+  /* background: #b8d7e6 !important; */
+  background: #fff !important;
+}
+
+.navbar-brand-box {
+  background: #20456a !important;
+}
+
+.show-btn {
+  background: #ff414b;
+  border: #111 solid 1px;
+  border: #f1c40f solid 1px;
+}
+
+.show-btn:hover {
+  background: #fff;
+  border: #ff414b solid 1px;
+  color: #ff414b;
+}
+
+.dark-btn {
+  background: #111;
+  border: #111 solid 1px;
+}
+
+.dark-btn:hover {
+  background: #fff;
+  border: #ff414b solid 1px;
+  color: #ff414b;
+}
+
+/* .edit-btn {
+	background: #111;
+	border: #111 solid 1px;
+	color: #FFF;
+} */
+/*
+.edit-btn:hover {
+	background: #FFF;
+	border: #ff414b solid 1px;
+	color: #ff414b;
+} */
+
+.delete-btn {
+  background: #fff;
+  border: #111 solid 1px;
+  color: #111;
+}
+
+.delete-btn:hover {
+  background: #111;
+  border: #111 solid 1px;
+  color: #fff;
+}
+
+/* Removed hr it will reflecting in the view profile bottom start*/
+
+/* hr {
+  margin: 7px 0;
+  border-top: 1px solid #eee;
+} */
+
+/* Removed hr it will reflecting in the view profile bottom end*/
+
+.wizard .steps .current a,
+.wizard .steps .current a:active,
+.wizard .steps .current a:hover {
+  background-color: rgba(255, 65, 75, 0.2);
+  color: var(--bs-gray-700);
+}
+
+.wizard .steps > ul > li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--bs-gray-600);
+  font-weight: 500;
+  background-color: rgba(237, 237, 237, 0.5);
+}
+
+.wizard {
+  min-height: 350px;
+}
+
+.menu-title {
+  color: #fff !important;
+}
+
+#sidebar-menu ul li a {
+  color: #fff !important;
+  font-family: Mada, sans-serif;
+font-weight: 400;
+font-size: 14px;
+}
+
+#sidebar-menu ul li a i {
+  color: #fff !important;
+}
+
+.nav-tabs .nav-link {
+  border-radius: 0px;
+}
+
+.nav-tabs {
+  font-size: 14px;
+}
+
+.nav-tabs .nav-link.active {
+  background: #20456a;
+  color: #fff;
+}
+
+/* Add this CSS to your stylesheet or <style> tag */
+#datatable tbody tr {
+  margin-bottom: 5px; /* Adjust the value to decrease the space between rows */
+  height: 30px; /* Adjust the value to reduce the height of rows */
+}
+
+#datatable tbody td {
+  padding: 5px; /* Adjust the value to decrease the space inside each cell */
+  font-size: 14px !important;
+}
+
+#datatable .edit-btn {
+  font-size: 12px; /* Adjust the value to reduce the font size and scale the button and its content */
+  line-height: 1; /* Set line-height to 1 to reduce any extra spacing inside the button */
+  padding: 5px 6px; /* Adjust the padding to control the button size */
+  /* width: 15px */
+  background: #20456a;
+  border: #20456a;
+}
+
+#datatable .edit-btn:hover {
+  font-size: 12px; /* Adjust the value to reduce the font size and scale the button and its content */
+  line-height: 1; /* Set line-height to 1 to reduce any extra spacing inside the button */
+  padding: 5px 6px; /* Adjust the padding to control the button size */
+  /* width: 15px */
+  background: #ff414b;
+  border: #ff414b;
+}
+
+#datatable .edit-btn svg {
+  width: 14px; /* Adjust the value to reduce the width of the icon */
+  height: 16px; /* Adjust the value to reduce the height of the icon */
+}
+
+/* Add this CSS to your stylesheet or <style> tag */
+
+.allText {
+  font-family: Mada, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+}
+
+.table th {
+  font-family: Mada, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+
+/* body {
+  font-family: Mada, sans-serif !important;
+  font-weight: 400;
+  color: #f1c40f;
+} */
+
+.table-hover {
+  $table-hover-bg: $gray-100 !default;
+}
+
+.sidenav-hover {
+  $sidenav-hover-bg: $red-100 !default;
+}
+
+.footer {
+  left: 175px;
+}
+
+/* button {
+	background-color: #0073aa;
+	border-color: #0073aa;
+	color: #fff;
+} */
+
+/* .btn-primary {
+    background-color: #0073aa;
+border-color: #0073aa;
+color: #fff;
+} */
+
+.main-content {
+  margin-left: 186px !important;
+  overflow: hidden !important;
+  margin-top: -4% !important;
+
+  font-family: Mada, sans-serif !important;
+  font-weight: 400;
+font-size: 15px;
+  
+}
+
+.no-uppercase {
+	text-transform: none;
+}
+
+.page-title-box h4 {
+	text-transform: none;
+  font-size: 15px !important;
+  }
+
+
+  .custom-link {
+    position: relative;
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove default underline */
+  }
+  
+  .custom-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust this value to position the underline */
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: #007bff; /* Underline color */
+  }
+  
+  .custom-link:hover::after {
+    background-color: #0056b3; /* Color on hover */
+  }
+  
+
+  .p-dialog .p-dialog-header .p-dialog-title {
+    /* color: red; */
+    color: #212529;
+    font-family: Mada, sans-serif;
+font-weight: 600 !important;
+font-size: 16px !important;
+  }
+
+.form-control {
+  width: 58% !important; 
+  font-family: Mada, sans-serif !important;
+  font-weight: 400;
+  font-size: 14px;
+
+}  
+
+
+.td-forms {
+  width: 100% !important;
+}
+
+.form-select  {
+  width: 58% !important; 
+  font-family: Mada, sans-serif !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+h5 {
+  font-family: Mada, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+
+/* Logout Modal Start*/
+.p-dialog.p-confirm-dialog .p-confirm-dialog-message {
+  margin-top: -13px;
+  color:#212529;  
+  font-family: Mada, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  }
+  
+  .p-dialog.p-confirm-dialog .p-confirm-dialog-icon {
+    font-size: 1rem;
+}
+  /* Logout Modal End*/
+  
+  .custom-dialog .p-dialog-content {
+    margin-bottom: -28px;
+  }
+
+  .custom-dialog .p-dialog-title {
+    font-size: 16px !important;
+  }
+  /* .custom-dialog .p-dialog-title {
+    margin-top: -14px !important;
+  } */
+
+  .custom-dialog .p-confirm-dialog-icon{
+    font-size: 1.3rem !important;
+    margin-top: -14px !important;
+  }
+  .custom-dialog  .p-dialog-footer{
+   height: 73px;
+    margin-bottom: 29px;
+  } 
+   .custom1-dialog {
+     width: 25%;
+    /* height: 50%; */
+    /* padding-bottom: 20px !important; */
+    /* background: yellow !important; */
+  }
+
+  .custom1-dialog .passwordText {
+    font-size: 14px;
+  }
+  
+  .p-dialog-header {
+    padding: 0.5rem !important;
+  }
+
+  .p-dialog .p-dialog-content:last-of-type { 
+    /* overflow: hidden; */
+  }
+
+   .customView-dialog .p-dialog-content {
+    overflow: hidden !important;
+    color: #007bff;
+  }
+
+  .p-dialog-draggable .p-dialog-header .customView-dialog{
+    height: 0px; 
+}
+
+/* .p-dialog .p-dialog-content:last-of-type .AssociatedStudy-Cards{
+    padding-top: 40px !important;
+} */
+
+/* ::ng-deep {
+  .AssociatedStudy-Cards{
+    padding-top: 40px !important;
+    overflow: scroll;
+}
+} */
+
+.p-dialog-draggable .p-dialog-header
+
+/* .custom1-dialog .sendOtp-Allignment {
+  margin-left: 20px !important;
+} */
+
+
+.custom1-dialog .sendOtp-buttonAllignment {
+  margin-right: 36% !important;
+}
+
+.custom1-dialog .modal-footer {
+  margin-right: 36%;
+}
+
+/* .custom1-dialog .send-otp-footer .send-otp-button {
+  margin-right: 36%;
+} */
+
+.custom1-dialog .update-footer .update-button {
+  margin-right: 0; /* Or any other desired value */
+}
+
+.customView-dialog  {
+  margin-bottom: -18px;
+}
+
+.customView-dialog  .p-dialog-header-icon {
+  margin-bottom: -20px;
+}
+
+.custom1-dialog .p-dialog-header-icon {
+  margin-bottom: -35px;
+
+}
+
+.customView-dialog .p-dialog-content {
+  margin-top: -15px;
+}
+
+::ng-deep {
+
+  .textAllignment {
+
+    font-family: Mada, sans-serif !important;
+    font-weight: 400;
+  font-size: 14px !important;
+  }
+}
+
+.size-form-control {
+  height: 45px;
+  /* padding: 0; */
+  margin-left: -11px;
+}
+
+.country-dropdown option{
+  width: 10px !important;
+  margin: 10px;
+}
+
+:ng-deep{
+  .country-dropdown option{
+    width: 100px !important;
+  }
+}
+
+.p-chips .p-chips-multiple-container .p-chips-input-token{
+  padding: 0px !important;
+}
+
+.p-chips .p-chips-multiple-container{
+  padding: 0px 0px 0px 4px !important;
+}
+
+
+
+.p-chips .p-chips-multiple-container .p-chips-input-token input  {
+  height: 35px !important;
+}
+
+::ng-deep {
+  .invalid-feedback {
+      font-size: 30px;
+  }
+}
+
+
+.form-select option {
+  width: 50px; /* Adjust this value as needed */
+}
+
+.card-body {
+  font-size: 14px !important;
+}

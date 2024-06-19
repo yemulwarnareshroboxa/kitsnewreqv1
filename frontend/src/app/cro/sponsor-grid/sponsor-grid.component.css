@@ -1,0 +1,31 @@
+
+/* Add this CSS to your stylesheet */
+.sort-icons i {
+    font-size: 15px; /* Adjust this value for icon size */
+    opacity: 0.5; /* Adjust this value to control icon opacity */
+    transition: opacity 0.3s;
+}
+
+.sort-icons i.active {
+    opacity: 2;
+    color: blue;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+th{
+    height: 10px;
+    padding: 5px;
+}
+
+/* .table-hover{
+    $table-hover-bg: $gray-100 !default;
+} */ 
+.btn-primary {
+    background-color: #0073aa;
+border-color: #0073aa;
+color: #fff;
+}
+
